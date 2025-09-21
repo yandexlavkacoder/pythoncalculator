@@ -124,12 +124,16 @@ elif operator == '>>':
 
 #операторы принадлежности
 elif operator == 'in':
-        result = str1 in str2
-        print(str1, "находится в ", str2)
+    if str1 in str2:
+        print(str1, " находится в ", str2)
+    else:
+        print(str1, "не находится в ",str2 )
         
 elif operator == 'not in':
-        result = str1 not in str2
-        print(str1, "не находится в ", str2 )
+    if str1 not in str2:
+        print( str1, "не находится в", str2)
+    else:
+        print(str1, "находится в ", str2 )
 
 
 
